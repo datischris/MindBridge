@@ -1,0 +1,7 @@
+{
+    "tests": [
+      {"input": "Hello there!", "expected_intent": "Greeting"},
+      {"input": "How can I reset my password?", "expected_intent": "PasswordReset"},
+      {"input": "What’s the weather like?", "expected_intent": "WeatherQuery"}
+    ]
+}
