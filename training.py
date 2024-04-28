@@ -3,6 +3,7 @@ import json
 import pickle
 import numpy as np
 import nltk
+import csv
 from nltk.stem import WordNetLemmatizer
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -10,10 +11,15 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
+
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('Intent.json').read())
+intents = json.loads(open('datasets/Intent.json').read())
 
+# Creates empty lists
+# words is for tokenized patterns or context
+# classes is for intent name or tag
+# documents is for [context, tag]
 words = []
 classes = []
 documents = []

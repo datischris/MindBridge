@@ -6,20 +6,8 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
-import queue
-import re
-import sys
-from google.cloud import speech
-import pyaudio
-import os
-RATE = 16000
-CHUNK = int(RATE / 10)
-
-
-
 lemmatizer = WordNetLemmatizer()
-intents=json.loads(open('Intent.json').read())
-
+intents=json.loads(open('datasets/Intent.json').read())
 words = pickle.load(open("words.pkl", "rb"))
 classes = pickle.load(open("classes.pkl", "rb"))
 model = load_model("chatbot_model.keras")
@@ -88,7 +76,6 @@ def evaluate_chatbot(test_set):
 test_set = json.loads(open('test.json').read())
 
 evaluate_chatbot(test_set)
-
 
 print("Chatbot is running! Type 'quit' to exit.")
 
