@@ -19,7 +19,7 @@ type ChatResponse struct {
 }
 
 func sendMessageToPython(message string) (string, error) {
-    cmd := exec.Command("/Users/joe/mindbridge/path/to/venv/bin/python3", "chatbot.py", "--message", message)
+    cmd := exec.Command("/Users/joe/mindbridge/venv/bin/python3", "chatbot.py", "--message", message)
     // cmd := exec.Command("python", "chatbot.py", "--message", message)
 
     var stdout, stderr bytes.Buffer

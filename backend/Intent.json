@@ -111,7 +111,8 @@
           "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
           "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."]
       }, 
-      {"tag": "hate-you",
+      {
+        "tag": "hate-you",
           "patterns": ["I hate you", "I don't like you", "I don't trust you"],
           "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"]
       },
@@ -139,19 +140,23 @@
           "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
           "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
       },
-      {"tag": "location",
+      {
+        "tag": "location",
           "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
           "responses": ["Duh I live in your computer", "Everywhere", "Somewhere in the universe" ]
       },
-      {"tag": "something-else",
+      {
+        "tag": "something-else",
           "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
           "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"]
       },
-      {"tag": "friends",
+      {
+        "tag": "friends",
           "patterns": ["I don't have any friends"],
           "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"]
       },
-      {"tag": "ask",
+      {
+        "tag": "ask",
           "patterns": ["Can I ask you something?"],
           "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
       },
@@ -318,7 +323,221 @@
       {"tag": "fact-32",
           "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
           "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."]
-      }
-  
+      },
+      {
+      "tag": "motivation",
+      "patterns": [
+        "I need some motivation", 
+        "Can you motivate me?", 
+        "I feel unmotivated", 
+        "I'm lacking motivation"
+      ],
+      "responses": [
+        "Remember, every small step counts. What's one small thing you can accomplish today?", 
+        "You're capable of overcoming this. Sometimes, just starting with a small, manageable task can help boost your motivation.", 
+        "It's okay to have days like this. Maybe take a moment to relax and then tackle one small task. You'll feel better once you start!"
       ]
-  }
+    },
+    {
+      "tag": "anxiety-relief",
+      "patterns": [
+        "How can I calm down?", 
+        "I'm feeling really anxious", 
+        "How do I relieve anxiety?", 
+        "I'm worried all the time"
+      ],
+      "responses": [
+        "Try focusing on your breath, taking slow, deep breaths. It can be really helpful.", 
+        "Why don't we try a short mindfulness exercise? Close your eyes and focus on your breathing for two minutes.", 
+        "It sounds like you're feeling overwhelmed. Let's take a moment to pause and breathe together."
+      ]
+    },
+    {
+      "tag": "self-esteem",
+      "patterns": [
+        "I feel bad about myself", 
+        "I have low self-esteem", 
+        "I don't feel good enough", 
+        "Why can't I be more like others?"
+      ],
+      "responses": [
+        "Everyone has unique qualities including you. What's something you like about yourself?", 
+        "It's tough to feel this way, but remember, comparing ourselves to others often skews our self-perception. What's one thing you achieved today?", 
+        "You are enough just as you are. Let's talk about your strengths."
+      ]
+    },
+    {
+      "tag": "encouragement",
+      "patterns": [
+        "I can't do this", 
+        "This is too hard", 
+        "I'm not sure I can manage"
+      ],
+      "responses": [
+        "You've got this. You're stronger than you think, and you've handled challenges before.", 
+        "Take it one step at a time. You don't have to have it all figured out to move forward.", 
+        "It's okay to feel this way, but I believe in you. Let's break down this problem together."
+      ]
+    },
+    {
+      "tag": "relaxation",
+      "patterns": [
+        "I need to relax", 
+        "How can I unwind?", 
+        "I'm stressed and need to chill"
+      ],
+      "responses": [
+        "Consider taking a short walk or listening to some calm music. Which would you prefer?", 
+        "Deep breathing and visualization can be very relaxing. Would you like to try a guided exercise?", 
+        "Taking a moment for yourself is important. Maybe a cup of tea or a few minutes of meditation could help?"
+      ]
+    },
+    {
+        "tag": "reflect",
+        "patterns": [
+          "Can we reflect on my progress?",
+          "I want to review my improvements",
+          "How have I been doing lately?"
+        ],
+        "responses": [
+          "Of course, let's take a moment to reflect on your journey and celebrate your progress. What improvements have you noticed?",
+          "Reflecting on our progress can be very rewarding. Tell me, what changes have you observed in yourself recently?",
+          "It's great to look back and see how far we've come. What are some positive changes you've felt in your life?"
+        ]
+      },
+      {
+        "tag": "conflict-resolution",
+        "patterns": [
+          "I'm having trouble with a friend",
+          "I had a fight with my partner",
+          "How do I resolve a conflict?"
+        ],
+        "responses": [
+          "Conflicts are challenging but can be resolved through understanding. Would you like to discuss what happened and explore some ways to approach the situation?",
+          "It's important to stay calm and communicate openly when resolving conflicts. What do you think is the main issue that needs to be addressed?",
+          "Dealing with conflicts can be stressful. Let's try to find a way to express your feelings clearly and calmly. What do you feel needs to be said?"
+        ]
+      },
+      {
+        "tag": "coping-strategies",
+        "patterns": [
+          "How can I cope better?",
+          "I need coping mechanisms",
+          "What are some strategies to handle stress?"
+        ],
+        "responses": [
+          "Coping strategies are essential for managing stress. Let's explore some activities like mindfulness, journaling, or physical exercise. Which one are you interested in trying?",
+          "Building a toolkit of coping strategies is a great step. Techniques like deep breathing, progressive muscle relaxation, or guided imagery can be very effective. Would you like to learn more about one of these?",
+          "Everyone copes differently, so finding what works for you is key. Have you tried meditation or talking things out with someone you trust?"
+        ]
+      },
+      {
+        "tag": "future-planning",
+        "patterns": [
+          "Can you help me plan for the future?",
+          "I'm not sure about my next steps",
+          "What should I do next in my life?"
+        ],
+        "responses": [
+          "Planning for the future can be exciting but daunting. Let's start by setting some small, achievable goals. What areas of your life would you like to focus on?",
+          "It's okay to feel unsure about the future. Let's discuss your hopes and aspirations and make a plan that feels right for you. What are your main goals right now?",
+          "Deciding on next steps can be challenging. How about we brainstorm some options and explore what might be the best path for you?"
+        ]
+      },
+      {
+        "tag": "self-care",
+        "patterns": [
+          "What is self-care?",
+          "Why is self-care important?",
+          "How do I practice self-care?"
+        ],
+        "responses": [
+          "Self-care is about taking the time to care for yourself in whichever ways work best for you. It can help manage stress, lower your risk of illness, and increase your energy. What are some activities that make you feel good?",
+          "Practicing self-care is crucial because it improves your mental, emotional, and physical health. It's about doing things that replenish you, not deplete you. What does self-care look like for you?",
+          "Self-care is an important part of staying healthy. It might include things like getting enough sleep, eating healthy, exercising, or taking time to relax and do things you enjoy. What's one self-care activity you could start today?"
+        ]
+      },
+      {
+        "tag": "academic-stress",
+        "patterns": [
+          "I failed my exam",
+          "I did really bad on my quiz",
+          "I'm not doing well in school",
+          "My grades are terrible",
+          "I feel like I'm failing in my classes"
+        ],
+        "responses": [
+          "It's completely understandable to feel upset about this, but one exam doesn't define your whole academic journey. What part of your studies do you find most challenging?",
+          "Remember, everyone faces setbacks now and then. What's important is how you bounce back. Would you like to discuss how you can improve your study habits?",
+          "It can be really tough to face academic challenges, but these experiences can help us grow. Let's talk about what you've found difficult and find ways to tackle that."
+        ]
+      },
+      {
+        "tag": "academic-disappointment",
+        "patterns": [
+          "I'm disappointed with my grades",
+          "I thought I did well, but my scores are low",
+          "All my hard work feels wasted",
+          "I studied a lot but still did poorly"
+        ],
+        "responses": [
+          "That sounds really discouraging, especially after all your effort. It's okay to feel disappointed, but let's see what can be learned from this experience.",
+          "Dealing with disappointment can be tough, especially when you've put in a lot of effort. Would you like to review your study strategies to see where improvements can be made?",
+          "It's frustrating to not see the results you hoped for, but this doesn't reflect your entire potential. Let's explore different study methods that might work better for you."
+        ]
+      },
+      {
+        "tag": "encouragement-after-failure",
+        "patterns": [
+          "I don't think I can recover from this academic setback",
+          "Is it possible to bounce back after failing an exam?",
+          "How can I recover from a bad grade?"
+        ],
+        "responses": [
+          "Absolutely, it's definitely possible to bounce back from this. Many successful people have faced similar challenges. What subjects do you need the most help with?",
+          "Recovering from a setback is all about taking constructive steps forward. Let's start by identifying what went wrong and planning a better approach for next time.",
+          "Every setback is an opportunity to learn and grow. Let's discuss some strategies to help you improve and feel more prepared for the next exam."
+        ]
+      },
+      {
+        "tag": "academic-stress",
+        "patterns": [
+          "I'm worried about my upcoming exams",
+          "School is really stressing me out",
+          "I'm not sure I can handle my course load",
+          "My academic pressure is too much"
+        ],
+        "responses": [
+          "It sounds like you're under a lot of pressure. Let's break down your tasks into smaller, more manageable steps. Which subject is causing the most stress right now?",
+          "Experiencing stress from school is completely normal, especially with exams on the horizon. Have you tried using a planner to organize your study time better?",
+          "It’s important to balance your studies with breaks. Can we talk about what relaxes you and how you might incorporate that into your routine?"
+        ]
+      },
+      {
+        "tag": "academic-disappointment",
+        "patterns": [
+          "I'm really upset about my recent exam results",
+          "I studied hard but didn't get the grades I expected",
+          "I feel like my efforts in school are not paying off"
+        ],
+        "responses": [
+          "I understand it's disheartening to not see the results you expected. Sometimes, reflecting on the study methods can help. Want to go over how you prepared?",
+          "It's tough to work hard and feel you're not achieving your goals. It might help to talk about what you find most challenging and see if we can find a better approach together.",
+          "Feeling disappointed is natural, but it doesn't define your entire academic ability. Let's discuss what can be learned from this experience and how to move forward."
+        ]
+      },
+      {
+        "tag": "encouragement-after-failure",
+        "patterns": [
+          "I failed my test and feel terrible",
+          "How can I bounce back after a bad grade?",
+          "I don’t know how to deal with academic failure"
+        ],
+        "responses": [
+          "It's really tough to face setbacks, but each setback is a stepping stone to success. Let's look at what might have gone wrong and how you can prepare differently next time.",
+          "Recovering from a low grade is absolutely possible. Many students have been where you are and turned it around. Would you like some tips on study techniques that might help?",
+          "Everyone faces academic challenges; you're not alone. Let's plan a strategy to tackle the next exam. What subjects do you find most difficult?"
+        ]
+      }
+  ]
+}
